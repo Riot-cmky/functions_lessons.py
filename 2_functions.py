@@ -3,10 +3,8 @@
 
 # You should only define the function, you should not call it later.
 
-
-
-
-
+def greet():
+    print("Hello world!")
 
 
 # Create Functions Practice #2
@@ -16,8 +14,8 @@
 
 # Note: Only define the function and create the variable. Do not call the function afterwards.
 
-
-
+def welcome(name):
+    print(f"Welcome {name}")
 
 
 
@@ -27,3 +25,6 @@
 # The name of the argument that this function must take is number. Create this variable and assign it any number.
 
 # You should only define the function and create the variable, you should not call the function afterwards.
+
+def square(number):
+    print(number ** 2)
