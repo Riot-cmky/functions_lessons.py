@@ -1,34 +1,68 @@
-# Methods, Help & Documentation Practice #1
-# Remove the characters to the left of our main text:
+from  determineEligibility import determineEligibilty_toGraduate, listOfMovies
 
-# ,
+# functions are ways to wrap your code into reusable units
 
-# :
+# define a functuion with def
+# only define the function once
+# when I pass in a parameter, I am passing in a placeholder for future information
+# def say_hello():
+#     print("Hello!")
+#     print("How are you?")
 
-# %
+# def say_hello(name): # (name) is a parameter
+#     print(f"Hello! {name}")
+#     print(f"How are you? {name}")
+    
 
-# _
+#call the function also known as invoking 
+# pass in information called an argument
+# say_hello("Alice")
+# say_hello("paul")
+# say_hello("Bob")
+# say_hello("Altair")
 
-# #
+# def say_hello(name,age, address):
+#     print(f"Hello! {name}")
+#     print(f"How are you? {name}")
+#     print(f"{name} are {age} years old")
+#     print(f"{name} live in {address} years old")
 
-# Use the lstrip() method. Print the result to the screen:
+# say_hello("Alice",22,"123 Main St")
+# say_hello("paul",34,"456 Main St")
+# say_hello("Bob", 56,"789 Main St")
+# say_hello("Altair", 45, "101 Main St")
 
-# ",:_#,,,,,,:::____##Total_ _Pyt%on,,,,,,::#"
 
-# Search the documentation for the requested method to learn how it works. You can use intermediate variables if you need them.
+#-------------------------------------------------------------
+determineEligibilty_toGraduate("Alice", 120, 2.0, 800)
+determineEligibilty_toGraduate("Bob",119, 1.9, 799)
+#--------------------------------------------------------------
+listOfMovies("The Matrix", 10, "action")
+listOfMovies("The Hangover", 5, "comedy")
+listOfMovies("The Ring", 3, "horror")
+listOfMovies("Mufasa", 2, "animated")
+#-------------------------------------------------------------
 
+# the return statement is used to return a value from a function
+# return = statement used to end a function and send a result back to the caller
 
-# Methods, Help & Documentation Practice #2
-# Add the element "orange" as the fourth element of the following list fruits, using the insert() method:
+def add(x,y):
+    z = x + y
+    return z
 
-# fruits = ["mango", "banana", "cherry", "plum", "grapefruit"]
+def subtract(x,y):
+    z = x - y
+    return z
 
-# Search the documentation for the requested method to know how it works.
+def multiply(x,y):
+    z = x * y
+    return z
 
-# Methods, Help & Documentation Practice #3
-# Check if the sets below are isolated (that is, they have no elements in common), using the isdisjoint() method. Store this result in the isolated_sets variable:
+def divide(x,y):
+    z = x / y
+    return z
 
-# phone_brands = {"Samsung", "Xiaomi", "Apple", "Huawei", "LG"}
-# tv_brands = {"Sony", "Philips", "Samsung", "LG"}
-# Search the documentation for the requested method to know how it works.
-
+print(add(1,2))
+print(subtract(1,2))
+print(multiply(1,2))
+print(divide(1,2))
